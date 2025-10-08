@@ -2,3 +2,4 @@ langchain-groq
 flask
 python-dotenv
 langchain
+gunicorn
