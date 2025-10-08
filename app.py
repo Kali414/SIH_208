@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import os
 import json
 from langchain_groq import ChatGroq
@@ -9,7 +10,7 @@ load_dotenv()
 
 # -------------------- Flask App --------------------
 app = Flask(__name__)
-
+CORS(app, resources={r"/*": {"origins": "*"}}, allow_headers="*")
 # -------------------- Groq Client --------------------
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 if not GROQ_API_KEY:
