@@ -1,6 +1,8 @@
 ## URL
 https://sih-208.onrender.com/optimize
 
+POST Method
+
 ## Input
 ```
 {
